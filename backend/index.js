@@ -30,7 +30,7 @@ app.use(errorHandler)
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:5000",
+        origin: "https://atkal-server.vercel.app",
         methods: ["GET", "POST"],
     },
 });
